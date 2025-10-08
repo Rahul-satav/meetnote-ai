@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+.container-box {
+  @apply max-w-5xl mx-auto px-4 py-6;
+}
+
+.card {
+  @apply bg-white shadow-sm rounded-2xl p-5 border border-slate-200;
+}
+.btn {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50 active:scale-[.99];
+}
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-600 text-white hover:bg-sky-700;
+}
+.badge {
+  @apply inline-flex items-center px-2 py-0.5 text-xs rounded-lg bg-slate-100 text-slate-700 border border-slate-200;
+}
+textarea.transcript {
+  @apply w-full min-h-[220px] p-3 border border-slate-300 rounded-xl bg-white;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
